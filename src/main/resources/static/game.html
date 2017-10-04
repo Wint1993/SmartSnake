@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+<body>
+<panel>
+<form action="/api/words/create" name="form1" method="post" >
+    <div>Word: <input type="text" name="word"/></div>
+    <div>
+        <input type="submit" name="button" value="Create"/>
+    </div>
+</form>
+</panel>
+
+<panel>
+    <form action="/api/words/all" name="form2" method="get">
+        <div><input type="submit" name="button" value="Show"/></div>
+    </form>
+</panel>
+
+<panel>
+    <form action="/api/logout" method="post">
+        <div><input type="submit" value="Logout"/></div>
+
+    </form>
+</panel>
+
+</body>
+</html>
